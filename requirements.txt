@@ -1,0 +1,10 @@
+requests>=2.25.1
+urllib3>=1.26.0
+colorama>=0.4.4
+tqdm>=4.62.0
+python-dateutil>=2.8.2
+PyYAML>=5.4.1
+beautifulsoup4>=4.9.3
+lxml>=4.6.3
+fake-useragent>=0.1.11
+dnspython>=2.1.0
